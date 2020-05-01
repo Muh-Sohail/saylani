@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-1 {
+            display: flex;
+            background:#30475e;
+            align-items: center;
+            height: 60px;
+            padding: 0;
+            
+            width: 100%;
+            /* padding-top: 15px; */
+        }
+
+        .s-img {
+            margin-left: 60px;
+        }
+
+        .s-img img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+
+        }
+
+        .h-header-1 {
+            margin: 0 auto;
+            color: white;
+
+        }
+
+        .b-header-1 {
+
+            margin-right: 40px;
+        }
+
+        .header-2 {
+            width: 100%;
+            background:white;
+            box-shadow: 0 5px 4px #f9f6f7;
+        }
+
+        .header-2 {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            width: 250px;
+            height: 100px;
+            margin-left: 60px;
+        }
+
+        .nav-2 {
+            margin-left: 100px;
+        } 
+
+        .nav-2 ul li {
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 30px;
+            text-align: end;
+            padding: 5px;
+
+        }
+         .nav-2 ul li:hover {
+             border-radius: 10px;
+             color:white;
+             background-color: green;
+             height: 25px;
+             
+         }
+        .back-img {
+            width: 1200px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .back-img img {
+            width: 1100px;
+            height: 400px;
+
+        }
+
+        .marq {
+            width: 82%;
+            margin-left: 75px;
+            background:#0779e4;
+            color: white;
+            
+
+        }
+
+        .intro {
+            width: 85%;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+            
+            
+        }
+        .intro p {
+           margin-left: 0px;  
+           margin-right: 80px;
+           text-align: justify; 
+          
+        }
+      
+        .intro-middle {
+            display: flex;
+            align-items: center;
+            margin-left: 500px;
+
+        }
+
+        .intro-mid-border-1,
+        .intro-mid-border-2 {
+            border-bottom: 2px solid green;
+            width: 50px;
+
+        }
+        .daily {
+            width: 100%;
+            height: 320px;
+            /* background: crimson; */
+            display: flex;
+            margin: 0 auto;
+            /* justify-content: space-around; */
+        }
+
+        .one,
+        .two,
+        .three,
+        .four {
+            width: 25%;
+            height: 280px;
+            background:#0779e4;
+            color: blanchedalmond;
+            align-items: center;
+        }
+
+        .one img,
+        .two img,
+        .three img,
+        .four img {
+            padding-top: 50px;
+            padding-left: 130px;
+            padding-bottom: 0px;
+            width: 60px;
+            height: 60px;
+
+
+
+        }
+
+        .one h1,
+        .two h1,
+        .three h1,
+        .four h1 {
+
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .one p,
+        .two p,
+        .three p,
+        .four p {
+            text-align: center;
+        }
+
+        .intro {
+            color: lightseagreen;
+            padding: 0;
+        } 
+
+        .duction {
+            color: green;
+            padding: 0px
+        }
+
+        span {
+            font-size: 30px;
+        }
+
+        /* span what we are doing */
+        .what {
+            color: green;
+            padding-right: 2px;
+        }
+
+        .doing {
+            color: lightseagreen;
+            padding-left: 5px;
+        }
+
+        .whatwe {
+            text-align: center;
+        }
+
+        .middle {
+            display: flex;
+            align-items: center;
+            margin-left: 600px;
+
+        }
+
+        .mid-border-1,
+        .mid-border-2 {
+            border-bottom: 2px solid green;
+            width: 50px;
+
+        }
+
+        .mid-img {}
+
+        .six-box {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+
+            margin-left: 100px;
+
+        }
+
+        .box {
+            width: 370px;
+            height: 180px;
+            color: crimson;
+            background:white;
+            box-shadow: 0px 0px 5px grey;
+            margin: 10px;
+            text-align: center;
+            opacity: 1;
+        }
+
+        .box img {
+            width: 60px;
+            height: 60px;
+            padding-top: 40px;
+        }
+
+        .box h1 {
+
+            padding-top: 20px;
+        }
+
+        .mission {
+            width: 90%;
+            display: flex;
+        }
+
+        .mis-1 {
+            padding-left: 100px;
+
+        }
+
+        .mis-2 {
+            padding-left: 230px;
+        }
+
+        .bor-1 {
+            border-bottom: 2px solid green;
+            width: 100px;
+
+            margin-left: 100px;
+        }
+
+        .bor-2 {
+            border-bottom: 2px solid green;
+            width: 100px;
+
+            margin-left: 900px;
+        }
+
+        /* *****************event css start */
+        .event-1 {
+            margin-bottom: 20PX;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 60px;
+            margin-bottom: 0;
+            width: 80%;
+            
+
+        }
+
+
+        .box-2 {
+            /* border: 2px solid blueviolet; */
+            height: 80px;
+            width: 350px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+
+
+        }
+
+        .box-2 img {
+            width: 30px;
+            height: 30px;
+
+            padding: 0;
+
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+
+        .box-2 h1 {
+
+            margin-left: 50px;
+            font-size: 20px;
+            margin-top: -25px;
+
+        }
+
+        .box-2-desc {
+            height: 250px;
+            margin-left: 820px;
+            margin-top: -205px;
+
+
+        }
+
+        /* *****************gllary */
+        /* .img-gal-1 {
+            color: green;
+            padding-right: 2px;
+        }
+
+        .img-gal-2 {
+            color: lightseagreen;
+            padding-left: 5px;
+        } */
+
+        .gallary {
+            text-align: center;
+            
+        }
+
+        .main-gallary {
+
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 50px;
+        }
+
+        .img-gallary img {
+            
+            width: 220px;
+            height: 200px;
+            transition: all 5s;
+        }
+
+        .img-gallary img:hover {
+            transform: scale(1.1);
+        }
+
+        /* *****************use fule links */
+        .footer {
+            padding-top: 80px;
+            height: 300px;
+            background:#30475e;
+        }
+
+        .use,
+        .contact {
+
+            color: white;
+        }
+
+        .use {
+            margin-left: 450px;
+            font-size: 20px;
+        }
+
+        .contact {
+            padding-left: 310px;
+            font-size: 20px;
+        }
+
+        .line-1 {
+            border-bottom: 1px solid green;
+            width: 50px;
+            margin-left: 450px;
+        }
+
+        .line-2 {
+            border-bottom: 1px solid wheat;
+            width: 360px;
+            margin-left: 500px;
+        }
+        .img-footer img {
+            width: 25px;
+            height: 25px;
+            
+        }
+        .img-footer {
+            margin-left: 860px;
+        }
+        .head p {
+            color: white;
+        }
+        .head {
+            margin-left: 50px;
+        }
+        .end {
+            background:#0779e4;
+            height: 40px;
+           padding-top: 10px;
+           padding-left: 10px;    
+        }
+        .post {
+            position: fixed;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ****************post -->
+    <div class="post">
+    <div class="header-1">
+        <div class="s-img">
+
+
+
+            <img src="images/socail media images/facebook.png" alt="">
+            <img src="images/socail media images/insta.png" alt="">
+            <img src="images/socail media images/twitter.png" alt="">
+            <img src="images/socail media images/whatsapp.png" alt="">
+            <img src="images/socail media images/youtube.png" alt="">
+        </div>
+        <div class="h-header-1">
+            <p>Millions of people's life has changed, millions more awaiting your donation</p>
+        </div>
+        <div class="b-header-1">
+            <button>UK Donar</button>
+            <button>Donat Now</button>
+            <button>SMIT Results</button>
+        </div>
+    </div>
+    <div class="header-2">
+        <div class="logo">
+            <img src="Saylani-logo.png" alt="">
+        </div>
+        <div class="nav-2">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Saylani Service</li>
+                <li>Futurre Project</li>
+                <li>Media </li>
+                <li>New</li>
+                <li>Donation </li>
+                <li>contact us</li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    <!-- *************************post end -->
+    <br>
+    <br><br>
+    <div class="back-img">
+        <img src="images/hazrat.jpg" alt="">
+    </div> <br> <br>
+    <div class="marq">
+        <marquee direction="left">
+            xt Phase Admission in Islamabad And Faisalabad" . More Details    (News-2 Dated:15-05-2019)  Saylani Welfare Announced "Donation Application" . More Details    (News-3 Dated:07-05-2019)  Alhamdulillah Saylani Organized 200+ Locations For Iftar And Sehri In This Holy Month . More Details    (News-4 Dated:08-03-2019)  Saylani Welfare Distributing Ration & Clothes to affected people of Balochistan. More Details    (News-5 Dated:25-02-2019)  PIAIC Entrance Exam Merit Ranking List Announced. More Details   (News-6 Dated:23-02-2019)  President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. More Details    (News-7 Dated:19-02-2019)  Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare International Trust, Saylani Mass I.T. Training. More Details   
+
+
+        </marquee>
+    </div>
+    <br>
+    <br>
+
+    <div class="intro">
+
+        <span class="intro">INTRO</span><span class="duction">DUCTON</span>
+
+        <div class="intro-middle">
+            <div class="intro-mid-border-1"></div>
+            <div class="intro-mid-img">
+                <img src="images/favicon.png" alt="">
+            </div>
+            <div class="intro-mid-border-2"></div>
+        </div>    
+        <br>
+        <br>
+        <br>
+        <p>Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani
+            Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the
+            financial troubles of the poor, giving people a chance to live a dignified life and spreading happiness. </p>
+            <br> 
+        <p> We are an organization that believes in lighting up the lives of underprivileged people across the world. We
+            endeavor to provide the best quality services in areas including food, education, medical and social welfare
+            free of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry
+            people each day, hundreds more are given the hope of life through medical health care, many are educated to
+            become leaders of tomorrow and several are given the opportunity to stand on their feet financially. </p> 
+              <br>
+         <p>Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125
+            branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and
+            Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide
+            branches are operating under the guidance of a team of over 2,000 working professionals who help almost
+            125,000 people on a daily basis.
+         </p>
+         <br>
+         <p>
+            We strongly believe that a little help goes a long way and our work would not be possible without the
+            generous support of our valuable donors. Our local and international donors have graciously lent us a hand
+            by supporting our causes and enabling us to serve the needs of people in need.</p>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="daily">
+        <div class="one">
+            <img src="images/food-img.png" alt="">
+            <h1>125,000</h1>
+            <p>DAILY DASTRAKHAN(MONTHLY)</p>
+        </div>
+        <div class="two">
+            <img src="images/family-img.png" alt="">
+            <h1>7,500</h1>
+            <p>FAMILY ADOPTION(MONTHLY</p>
+
+        </div>
+        <div class="three">
+            <img src="images/medical-img.png" alt="">
+            <h1>43,749</h1>
+            <P>MEDICAL(MONTHLY)</P>
+        </div>
+        <div class="four">
+            <img src="images/education-img.png" alt="">
+            <h1>180,000</h1>
+            <p>EDUCATION(MONTHLY)</p>
+        </div>
+    </div>
+    <div class="whatwe">
+        <span class="what">WHAT WE</span><span class="doing">ARE DOING ?</span>
+
+    </div>
+    <div class="middle">
+        <div class="mid-border-1"></div>
+        <div class="mid-img">
+            <img src="images/favicon.png" alt="">
+        </div>
+        <div class="mid-border-2"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="six-box">
+        <div class="box">
+            <img src="images/env-img.png" alt="">
+            <h1>ONLINE SADQAH</h1>
+        </div>
+        <div class="box">
+            <img src="images/family-img.png" alt="">
+            <h1>WELFARE</h1>
+        </div>
+        <div class="box">
+            <img src="images/medical-img.png" alt="">
+            <h1>MEDICAL</h1>
+        </div>
+        <div class="box">
+            <img src="images/food-img.png" alt="">
+            <h1>DASTRAKHAN</h1>
+        </div>
+        <div class="box">
+            <img src="images/water-img.png" alt="">
+            <h1>RO PLANT</h1>
+        </div>
+        <div class="box">
+            <img src="images/education-img.png" alt="">
+            <h1>EDUCATION</h1>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="mission">
+        <div class="mis-1">
+            <h1>MISSION AND UPCOMING PROJECT</h1>
+        </div>
+        <div class="mis-2">
+            <h1>UPCOMING EVENT</h1>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="bor-1"></div>
+    <div class="bor-2"></div>
+
+    <br>
+    <br>
+    <br>
+    <!-- **********************************event start -->
+    <div class="event-1">
+        <div class="box-2">
+            <img src="images/Hepatitis.png" alt="">
+            <h1>HEPATITIS</h1>
+
+        </div>
+        <div class="box-2">
+            <img src="images/house-img.png" alt="">
+            <h1>HOUSING SOCIETY</h1>
+        </div>
+
+
+        <div class="box-2">
+            <img src="images/compt-img.png" alt="">
+            <h1>IT LETERCY</h1>
+        </div>
+        <div class="box-2">
+            <img src="images/tharparkar.png" alt="">
+            <h1>THARPARKAR</h1>
+        </div>
+        <div class="box-2 box-2-desc">
+            <marquee behavior="" direction="up" height='200px'>
+                Entry Test Accouncement (Graphic Designing & Video Editing/Animation Course) On Sunday 3rd March 2019 @ 11:00Am Vanue: 4rh Floor, Saylani Welfare International Trust HeadOffice Bahadurabad .More Details
+
+Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare International Trust, Saylani Mass I.T. Training .More Details
+
+PIAIC Entrance Exam Merit Ranking List Announced.More Details
+
+President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. More Details
+            </marquee>
+                </div>
+    </div>
+
+    </div>
+    <!-- <div class="box-2 box-2-desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, illo debitis, aliquam deserunt consectetur natus aliquid voluptatum voluptatibus
+                 eum temporibus est asperiores autem tempora praesentium saepe quasi cum nobis voluptatem?</p>
+        </div>
+    </div>  -->
+
+
+    <!-- ************gallary -->
+    <br>
+    <br>
+    <br>
+    <div class="gallary">
+        <span class="img-gal-1">IMAGE</span><span class="img-gal-2">GALLARY</span>
+    </div>
+    <div class="middle">
+        <div class="mid-border-1"></div>
+        <div class="mid-img">
+            <img src="images/favicon.png" alt="">
+        </div>
+        <div class="mid-border-2"></div>
+    </div>
+    <div class="main-gallary">
+        <div class="img-gallary">
+            <img src="images/img-rashan2 (1).jpg" alt="">
+            <img src="images/img-food.jpg" alt="">
+            <img src="images/img-hazrat.jpg" alt="">
+            <img src="images/img-rashan2.jpg" alt="">
+            <img src="images/img-hazrat2.jpg" alt="">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- ***************footer -->
+    <div class="footer">
+        <div class="useful">
+            <span class="use">Useful Links</span>
+            <span class="contact">Contact With us</span>
+        </div>
+        <div class="line-1"> </div>
+        <div class="line-2"></div>
+        <div class="img-footer">
+            
+
+            <img src="images/socail media images/facebook.png" alt="">
+            <img src="images/socail media images/insta.png" alt="">
+            <img src="images/socail media images/twitter.png" alt="">
+            <img src="images/socail media images/whatsapp.png" alt="">
+            <img src="images/socail media images/youtube.png" alt="">
+        </div>
+           <div class="head">
+               <p>Head Office ,</p>
+               <p>A-25,Bhadurabad Chowrangi Karachi,Pakistan.</p>
+               <p>UAN : 111-729-526</p>
+               <P>CELL: 92-311-1729526</P>
+               <P>USA NO +1(716)941 7792</P>
+               <P>UK NO (+44)115 970 625</P>
+               <P>infor@saylaniwelfare.com</P>
+           </div>
+        
+        </div>
+       <div class="end">
+           <p>Copyright © 2020 Saylani Welfare</p>
+       </div>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
